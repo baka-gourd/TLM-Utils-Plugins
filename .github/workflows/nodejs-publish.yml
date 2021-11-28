@@ -49,4 +49,4 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            ./dist/tlm-utils.js
+            ./tlm-utils.js
