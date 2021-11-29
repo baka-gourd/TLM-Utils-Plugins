@@ -23,6 +23,12 @@ jobs:
         # REQUIRED if your upstream repo is private (see wiki)
         persist-credentials: false
 
+    - name: Set name
+      run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'actions@users.noreply.github.com'
+      shell: sh
+
     # REQUIRED step
     # Step 2: run the sync action
     - name: Sync upstream changes
